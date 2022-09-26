@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210mm" height="180mm" version="1.1" viewBox="0 0 210 180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="a" x1="106.77" x2="136.1" y1="96.56" y2="189.99" gradientTransform="matrix(.86641 0 0 3.0204 10.339 -293.77)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#f4ba4d" offset="0"/>
+<stop stop-color="#3caae3" offset="1"/>
+</linearGradient>
+</defs>
+<g transform="translate(.31527 2.7926)">
+<g transform="translate(.1204)" fill="#a0a09f">
+<rect transform="rotate(59.964)" x="44.185" y="-64.433" width="61.691" height="12" rx="7" ry="7" stroke-width=".32645" style="mix-blend-mode:normal"/>
+<rect transform="rotate(119.96)" x="-60.071" y="-126.71" width="61.691" height="12" rx="7" ry="7" stroke-width=".32645" style="mix-blend-mode:normal"/>
+</g>
+<rect x="19.694" y="53.794" width="170" height="116" rx="6.55" ry="6.55" fill="#8f7057" stroke-width=".32645" style="mix-blend-mode:normal"/>
+<rect x="32.194" y="63.794" width="145" height="96" rx="5.9643" ry="5.9643" fill="#af876d" stroke-width=".31557" style="mix-blend-mode:normal"/>
+<path d="m51.526 74.295c-3.9963 0.7044-6.8087 3.679-7.7684 8.0139-4.2308 19.109-2.4954 38.608 0 57.91 0.56927 4.4031 1.144 7.7068 5.6518 8.543 41.501 5.3452 67.967 5.5177 110.3 0 2.8142-0.36679 5.14-4.1468 5.7602-8.543 3.574-25.334 3.6988-31.485 0-57.91-0.61546-4.3969-2.3546-7.4504-6.8185-8.0139-39.878-4.787-71.138-4.6569-107.13 0z" enable-background="new" fill="url(#a)" fill-rule="evenodd" stroke-opacity="0" style="mix-blend-mode:normal"/>
+</g>
+</svg>

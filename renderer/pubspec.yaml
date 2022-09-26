@@ -1,0 +1,47 @@
+name: flutter_renderer
+description: A Visplay renderer implementation.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`.
+publish_to: 'none'
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  rive: ^0.9.0
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+
+flutter:
+  assets:
+    - assets/animations/
+    - assets/icons/
+
+  fonts:
+    - family: metropolis
+      fonts:
+        - asset: assets/fonts/Metropolis/Metropolis-Black.otf
+          weight: 700
+        - asset: assets/fonts/Metropolis/Metropolis-Bold.otf
+          weight: 600
+        - asset: assets/fonts/Metropolis/Metropolis-SemiBold.otf
+          weight: 500
+        - asset: assets/fonts/Metropolis/Metropolis-Medium.otf
+          weight: 400
+        - asset: assets/fonts/Metropolis/Metropolis-Regular.otf
+          weight: 300
+        - asset: assets/fonts/Metropolis/Metropolis-Light.otf
+          weight: 200
+  
+  # Include Material Icons font
+  uses-material-design: true
+
