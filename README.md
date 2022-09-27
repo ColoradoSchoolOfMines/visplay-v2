@@ -1,3 +1,5 @@
+<center><img src="assets/icons/visplay_icon.png" alt="Visplay" height="180"/></center>
+
 # What is Visplay?
 
 This project's goal is to make the TVs in many of Mines' buildings display useful content, although it is a general purpose digital signage solution and can also be used outside of Mines. This will eventually include general announcements, videos/images, weather, and "slideshow-like" content. Basically, this project aims to replace the current (closed-source and paid) software currently utilized by Mines to serve this purpose.
