@@ -1,4 +1,4 @@
-<center><img src="assets/icons/visplay_icon.png" alt="Visplay" height="180"/></center>
+<div align="center"><img src="assets/icons/visplay_icon.png" alt="Visplay" height="180"/></div>
 
 # What is Visplay?
 
