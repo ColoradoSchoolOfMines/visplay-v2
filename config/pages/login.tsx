@@ -6,7 +6,7 @@ export default function Login() {
       <div className="flex flex-col place-content-center h-screen w-64">
         <h1 className="text-center">Visplay</h1>
         <TextField label="Username" variant="outlined" className="bor" />
-        <TextField label="Password" variant="outlined" />
+        <TextField label="Password" type="password" variant="outlined" />
         <Button href="home" variant="outlined">
           Login
         </Button>
