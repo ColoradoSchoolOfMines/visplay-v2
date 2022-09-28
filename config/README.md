@@ -9,7 +9,7 @@ It's important to note that if you already know React, you can write code the sa
 Some of the main features we would be interested in for this project include:
 
 1. Built-in routing
-Next.js allows us to automatically.
+Next.js allows us to automatically map pages to specific URLs, so we won't need to serve them manually using node.
 
 2. Great Performance
 Next.js is known for its server-side rendering. This means that we can do more work to actually render the page on the server side (as opposed to the user's browser), and can optimize the code before sending it to the user. More information [here](https://medium.com/swlh/server-side-rendering-with-next-js-56f84f98f9bd).
@@ -41,8 +41,6 @@ Hopefully you won't get any errors and you can open [http://localhost:3000](http
 These contain the actual pages of our application. The structure of this folder also defines the URLs at which each page lives.
 
 For example, the file `pages/login.tsx` maps to the URL `/login`. (If you are running the dev server, this would be accessible at [http://localhost:3000/login](http://localhost:3000/login)).
-
-These are all written in React, and 
 
 ## pages/api/
 This directory is special, and is one of the benefits that Next.js provides. 
