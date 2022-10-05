@@ -5,7 +5,6 @@ import Image from 'next/image'
 
 export default function Login() {
   return (
-    <div>
       <div className="flex items-center flex-col">
         <div className="flex flex-col place-content-center h-screen w-64 space-y-10">
           <Image src={VisplayLogo} width={400} height={200}/>
@@ -17,6 +16,5 @@ export default function Login() {
           </Button>
         </div>
       </div>
-    </div>
   );
 }
