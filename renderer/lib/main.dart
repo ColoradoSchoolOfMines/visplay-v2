@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_renderer/core/theme.dart';
 import 'package:flutter_renderer/features/setup_screen/presentation/setup_screen.dart';
 
 void main() {
@@ -13,7 +14,10 @@ class VisplayApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return WidgetsApp(
       color: Colors.blue,
-      builder: (_, __) => const SetupScreen(),
+      builder: (_, __) => Theme(
+        data: cThemeData,
+        child: const SetupScreen(),
+      ),
     );
   }
 }

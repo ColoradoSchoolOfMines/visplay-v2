@@ -1,9 +1,11 @@
-/// This is the screen where
-
 import 'package:flutter/material.dart';
 import 'package:flutter_renderer/core/assets.dart';
 import 'package:rive/rive.dart';
 
+/// This is the screen that will be shown when a TV is not yet configured
+/// and is first turned on. From here, the user will need to connect to the
+/// config panel and configure the TV. Once this configuration is done,
+/// we would ideally redirect.
 class SetupScreen extends StatefulWidget {
   const SetupScreen({Key? key}) : super(key: key);
 
@@ -26,74 +28,68 @@ class _SetupScreenState extends State<SetupScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SizedBox(
-            width: 500,
-            height: 500,
-            child: RiveAnimation.file(
-              cVisplayIconAnimationDark.animationFile.path,
-              artboard: cVisplayIconAnimationDark.artboard,
-              onInit: _onRiveInit,
-            ),
-          ),
-          const Text(
+          _genVisplayIconAnimation(),
+          Text(
             'Welcome to Visplay!',
-            style: TextStyle(
-              fontSize: 50.0,
-              fontFamily: 'metropolis',
-              fontWeight: FontWeight.w700,
-            ),
+            style: Theme.of(context).textTheme.headline1,
           ),
           const SizedBox(height: 50.0),
-          Container(
-            padding: const EdgeInsets.symmetric(
-              vertical: 25.0,
-              horizontal: 50.0,
-            ),
-            decoration: BoxDecoration(
-              color: const Color(0xFF414141),
-              borderRadius: BorderRadius.circular(15.0),
-            ),
-            child: Column(
-              children: const [
-                Text(
-                  'To configure this device, please visit',
-                  style: TextStyle(
-                    fontFamily: 'metropolis',
-                    fontSize: 25.0,
-                  ),
-                ),
-                SizedBox(height: 15.0),
-                Text(
-                  'visplay.local',
-                  style: TextStyle(
-                    fontSize: 35.0,
-                    fontFamily: 'metropolis',
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-                SizedBox(height: 40.0),
-                Text(
-                  'Device Code',
-                  style: TextStyle(
-                    fontFamily: 'metropolis',
-                    fontSize: 25.0,
-                  ),
-                ),
-                SizedBox(height: 15.0),
-                Text(
-                  '962 844',
-                  style: TextStyle(
-                    fontSize: 45.0,
-                    fontFamily: 'metropolis',
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          _genConnectInfoBox(context),
           const SizedBox(height: 50.0),
         ],
       ),
+    );
+  }
+
+  SizedBox _genVisplayIconAnimation() {
+    return SizedBox(
+      width: 500,
+      height: 500,
+      child: RiveAnimation.file(
+        cVisplayIconAnimationDark.animationFile.path,
+        artboard: cVisplayIconAnimationDark.artboard,
+        onInit: _onRiveInit,
+      ),
+    );
+  }
+
+  Container _genConnectInfoBox(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(
+        vertical: 25.0,
+        horizontal: 50.0,
+      ),
+      decoration: BoxDecoration(
+        color: const Color(0xFF414141),
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      child: _genConnectInfoItems(context),
+    );
+  }
+
+  Column _genConnectInfoItems(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          'To configure this device, please visit',
+          style: Theme.of(context).textTheme.subtitle1,
+        ),
+        const SizedBox(height: 15.0),
+        Text(
+          'visplay.local',
+          style: Theme.of(context).textTheme.labelLarge,
+        ),
+        const SizedBox(height: 40.0),
+        Text(
+          'Device Code',
+          style: Theme.of(context).textTheme.subtitle1,
+        ),
+        const SizedBox(height: 15.0),
+        Text(
+          '962 844',
+          style: Theme.of(context).textTheme.headline1,
+        ),
+      ],
     );
   }
 }
