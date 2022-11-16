@@ -14,6 +14,9 @@ export default function Login() {
           <Button href="home" variant="outlined">
             Login
           </Button>
+          <Button href="home" variant="outlined">
+            Sign Up
+          </Button>
         </div>
       </div>
   );
