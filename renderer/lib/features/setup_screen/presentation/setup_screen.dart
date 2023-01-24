@@ -77,7 +77,7 @@ class _SetupScreenState extends State<SetupScreen> {
         const SizedBox(height: 15.0),
         Text(
           'visplay.local',
-          style: Theme.of(context).textTheme.labelLarge,
+          style: Theme.of(context).textTheme.subtitle2,
         ),
         const SizedBox(height: 40.0),
         Text(
