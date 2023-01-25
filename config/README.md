@@ -47,6 +47,8 @@ This directory is special, and is one of the benefits that Next.js provides.
 
 Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+This will also be used to manage JSON routes when the renderer is talking to the backend.
+
 ## components/
 You've just created a beautiful button in the Login page, but now you also want to use that same button on the Home page.
 You could just copy and paste all of your HTML code, but that gets annoying quickly.

@@ -1,8 +1,17 @@
-import express from "express";
+import express from 'express';
+import mongoose from 'mongoose';
 
-const app = express();
-app.get('/', (req, resp) => {
-    resp.send("Hello!");
-});
+import loginApi from './features/login/api';
 
-app.listen(8080);
+const main = async () => {
+    // Connect to the database using the ENV file.
+    await mongoose.connect(''); // TODO: Add actual database path.
+
+    // Setup API for 
+    const app = express();
+    app.use(loginApi);
+
+    app.listen(8080);
+}
+
+main().catch(err => console.log(err));
