@@ -5,7 +5,7 @@ import loginApi from './features/login/api';
 
 const main = async () => {
     // Connect to the database using the ENV file.
-    await mongoose.connect(''); // TODO: Add actual database path.
+    //await mongoose.connect('mongodb+srv://jarchibold:BzWeSZG0b89JJpEX@cluster0.ovrf7th.mongodb.net/?retryWrites=true&w=majority'); // TODO: Add actual database path.
 
     // Setup API for 
     const app = express();
