@@ -23,23 +23,23 @@ dev_dependencies:
 
 flutter:
   assets:
-    - assets/animations/
-    - assets/icons/
+    - ../assets/animations/
+    - ../assets/icons/
 
   fonts:
     - family: metropolis
       fonts:
-        - asset: assets/fonts/Metropolis/Metropolis-Black.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-Black.otf
           weight: 700
-        - asset: assets/fonts/Metropolis/Metropolis-Bold.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-Bold.otf
           weight: 600
-        - asset: assets/fonts/Metropolis/Metropolis-SemiBold.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-SemiBold.otf
           weight: 500
-        - asset: assets/fonts/Metropolis/Metropolis-Medium.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-Medium.otf
           weight: 400
-        - asset: assets/fonts/Metropolis/Metropolis-Regular.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-Regular.otf
           weight: 300
-        - asset: assets/fonts/Metropolis/Metropolis-Light.otf
+        - asset: ../assets/fonts/Metropolis/Metropolis-Light.otf
           weight: 200
   
   # Include Material Icons font
