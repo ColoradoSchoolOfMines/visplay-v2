@@ -1,4 +1,4 @@
-const cAssetsDir = '../assets/';
+const cAssetsDir = '../../assets/';
 
 // Visplay Icon Animation
 const cVisplayIconFile =
