@@ -1,5 +1,4 @@
 import express from 'express';
-import { container } from 'tsyringe';
 
 import { API } from "../api";
 import { loginApi } from './login_api';
@@ -10,6 +9,8 @@ export class ExpressAPI implements API {
         
         app.use('/login', loginApi);
 
-        app.listen(port, hostname);   
+        app.listen(port, hostname);
+
+        console.log(`Express is listening on port ${port}`);
     }
 }
