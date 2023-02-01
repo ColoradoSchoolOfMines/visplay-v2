@@ -1,4 +1,4 @@
-import { DBConnectionError } from "core/errors/db_connection_error";
+import { DBConnectionError } from "../../../core/errors/db_connection_error";
 import mongoose from "mongoose";
 
 import { DB } from "../db";
