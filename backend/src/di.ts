@@ -1,4 +1,6 @@
-import {container, inject, singleton} from "tsyringe";
+import "reflect-metadata";
+
+import { container } from "tsyringe";
 
 import { API } from './external/api/api';
 import { ExpressAPI } from './external/api/express/express_api';
