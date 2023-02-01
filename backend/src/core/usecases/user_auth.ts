@@ -1,3 +1,6 @@
+import { container } from "tsyringe";
+import { Hasher } from "../../external/hashing/hasher";
+
 class UserAuth {
     async loginUser(username: string, password: string): Promise<void> {
         const hasher = container.resolve<Hasher>("password_hasher");
