@@ -1,6 +1,9 @@
 import bcrypt from 'bcrypt';
 
-class BCryptHasher implements Hasher {
+import { HashResult } from '../../core/entities/hash_result';
+import { Hasher } from './hasher';
+
+export class BCryptHasher implements Hasher {
     hash(password: string): Promise<HashResult> {
         return new Promise((resolve, reject) => bcrypt.genSalt(10, (err: any, salt: string) => {
             if (err) return reject(err);

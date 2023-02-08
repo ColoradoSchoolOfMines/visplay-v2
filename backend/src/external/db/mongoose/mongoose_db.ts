@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 
 import { DB } from "../db";
 
-const getDBConnectionString = () => {
-    const username = process.env.USERNAME;
+export const getDBConnectionString = () => {
+    const username = process.env.USERN;
     const password= process.env.PASSWORD;
     const url = process.env.MONGO_URL;
 

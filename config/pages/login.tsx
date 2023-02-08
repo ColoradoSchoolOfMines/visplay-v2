@@ -22,7 +22,7 @@ export default function Login() {
           <Button variant="outlined" onClick={() => {
             const requestOptions = {
               method: "POST",
-              header: {'content-Type': 'application/json'},
+              headers: {'Content-Type': 'application/json'},
               body: JSON.stringify({'username': username, 'password': password})
             };
             fetch('http://127.0.0.1:8080/login', requestOptions)
