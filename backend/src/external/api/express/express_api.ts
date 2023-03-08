@@ -13,7 +13,7 @@ export class ExpressAPI implements API {
         app.use(bodyParser.urlencoded({
             extended: true
         }));
-        app.use('/login', loginApi);
+        app.use('/auth', loginApi);
 
         app.listen(port, hostname);
 
