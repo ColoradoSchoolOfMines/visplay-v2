@@ -1,17 +1,18 @@
-import express from 'express';
-import mongoose from 'mongoose';
+import * as dotenv from 'dotenv'
 
-import loginApi from './features/login/api';
+import { setupDI } from './di';
+import { ExpressAPI } from './external/api/express/express_api';
 
 const main = async () => {
-    // Connect to the database using the ENV file.
-    await mongoose.connect(''); // TODO: Add actual database path.
+    console.log('Starting Backend Server...');
 
-    // Setup API for 
-    const app = express();
-    app.use(loginApi);
+    setupDI();
+    // Read database keys from env variable
+    dotenv.config();
 
-    app.listen(8080);
+    const server = new ExpressAPI();
+    server.startServer("0.0.0.0", 8080);
+    
 }
 
 main().catch(err => console.log(err));
